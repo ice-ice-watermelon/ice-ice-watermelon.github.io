@@ -1,0 +1,37 @@
+# ============================================================
+# Redefine 主题配置（站点级覆盖，主题版本 v2.9.0）
+# 说明：v2 的字段名与旧版不同，背景图在 home_banner 下，
+#       旧版的 banner / avatar 等写法不会生效。
+# 完整字段见 node_modules/hexo-theme-redefine/_config.yml
+# ============================================================
+
+# 网站信息（会覆盖根目录 _config.yml 的同名字段）
+info:
+  title: ice-ice-watermelon
+  author: ice-ice-watermelon
+  url: https://ice-ice-watermelon.github.io
+
+# 主色 / 默认配色模式
+colors:
+  primary: "#A31F34"
+  default_mode: light # light 或 dark
+
+# 首页背景图：style 为 fixed 时，图片固定铺满整个页面，
+# 文章卡片、侧栏等半透明地浮在图片上，滚动时背景不动。
+home_banner:
+  enable: true
+  style: fixed
+  image:
+    light: /images/starry-night.webp
+    dark: /images/starry-night.webp
+  # 首屏标题，留空则只显示背景图
+  title: ice-ice-watermelon
+  # 首屏副标题（数组里可以放多句，循环打字显示）
+  subtitle:
+    text: []
+    hitokoto:
+      enable: false
+  # 首屏文字颜色
+  text_color:
+    light: "#fff"
+    dark: "#d1d1b6"
